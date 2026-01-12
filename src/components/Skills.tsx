@@ -1,46 +1,36 @@
 import { Globe, Cpu, MessageSquare, Lightbulb } from 'lucide-react';
-
-const skills = [
-  {
-    icon: Globe,
-    title: 'Supporto Multilingue',
-    items: [
-      'Professional customer support in Italian, English, and Spanish',
-      'Experience with international and multicultural users',
-    ],
-  },
-  {
-    icon: Cpu,
-    title: 'Competenze Tecniche',
-    items: [
-      'IT background and SaaS support familiarity',
-      'AutoCAD 2D and technical documentation',
-      'Basic web development knowledge (JavaScript / React)',
-    ],
-  },
-  {
-    icon: MessageSquare,
-    title: 'Comunicazione',
-    items: [
-      'Clear and effective communication with users',
-      'Active listening in high-pressure, KPI-driven environments',
-    ],
-  },
-  {
-    icon: Lightbulb,
-    title: 'Problem Solving',
-    items: [
-      'Fast root-cause analysis',
-      'Effective technical troubleshooting',
-    ],
-  },
-];
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const Skills = () => {
+  const { t } = useLanguage();
+
+  const skills = [
+    {
+      icon: Globe,
+      title: t.skills.multilingual.title,
+      items: t.skills.multilingual.items,
+    },
+    {
+      icon: Cpu,
+      title: t.skills.technical.title,
+      items: t.skills.technical.items,
+    },
+    {
+      icon: MessageSquare,
+      title: t.skills.communication.title,
+      items: t.skills.communication.items,
+    },
+    {
+      icon: Lightbulb,
+      title: t.skills.problemSolving.title,
+      items: t.skills.problemSolving.items,
+    },
+  ];
+
   return (
     <section id="skills" className="py-20 px-[7%]">
       <h2 className="section-heading">
-        Le mie <span className="text-primary">Competenze</span>
+        {t.skills.title} <span className="text-primary">{t.skills.titleHighlight}</span>
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
