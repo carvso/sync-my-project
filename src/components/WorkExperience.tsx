@@ -1,57 +1,14 @@
 import { MapPin, Calendar, Briefcase } from 'lucide-react';
-
-interface Experience {
-  title: string;
-  company: string;
-  location: string;
-  period: string;
-  points: string[];
-}
-
-const experiences: Experience[] = [
-  {
-    title: 'Customer-Facing Digital Operator (Game Presenter)',
-    company: 'Evolution S.L',
-    location: 'Madrid, Spain',
-    period: 'Jul 2024 – Dec 2025',
-    points: [
-      'Real-time interaction with international users on live digital platforms',
-      'Handling user requests and operational incidents following strict procedures',
-      'Working in KPI-driven and high-pressure environments',
-      'Maintaining professionalism, accuracy, and focus during continuous live operations',
-      'Fast adaptation to tools, platforms, and workflow changes',
-    ],
-  },
-  {
-    title: 'Technical Documentation & CAD Support',
-    company: 'ITING – Italiana Ingegneria',
-    location: 'Siracusa, Italy',
-    period: 'Oct 2023 – Jul 2024',
-    points: [
-      'Creation of technical drawings using AutoCAD 2D',
-      'Management of structured technical documentation',
-      'Compliance with UNI EN ISO standards',
-      'Supporting engineers in documentation and technical issue resolution',
-    ],
-  },
-  {
-    title: 'Customer Service – Hospitality (Fine Dining)',
-    company: 'Il Ghiottone Restaurant',
-    location: 'Siracusa, Italy',
-    period: 'Jun 2023 – Oct 2023',
-    points: [
-      'High-quality customer service in fast-paced, high-demand environments',
-      'Direct interaction with customers, managing requests and expectations',
-      'Focus on service quality, attention to detail, and customer satisfaction',
-    ],
-  },
-];
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const WorkExperience = () => {
+  const { t } = useLanguage();
+  const experiences = t.workExperience.experiences;
+
   return (
     <section id="work-experience" className="py-20 px-[7%]">
       <h2 className="section-heading">
-        Work <span className="text-primary">Experience</span>
+        {t.workExperience.title} <span className="text-primary">{t.workExperience.titleHighlight}</span>
       </h2>
 
       <div className="max-w-4xl mx-auto">

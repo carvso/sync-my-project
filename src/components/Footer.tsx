@@ -1,6 +1,9 @@
 import { ArrowUp } from 'lucide-react';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -8,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="flex justify-between items-center flex-wrap gap-4 py-6 px-[7%] bg-primary">
       <p className="text-base text-primary-foreground">
-        Copyright © 2026 by Vincenzo Caruso | All Rights Reserved.
+        {t.footer.copyright}
       </p>
       
       <button

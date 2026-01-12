@@ -1,23 +1,23 @@
 import { Github, Linkedin, Twitter, ArrowUpRight } from 'lucide-react';
 import profileImage from '@/assets/vincenzo-profile.jpg';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20">
       <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-12 lg:gap-20 items-center w-full max-w-7xl mx-auto px-[7%]">
         {/* Content */}
         <div className="text-center lg:text-left order-2 lg:order-1 animate-fade-in-up">
-          <h3 className="text-2xl md:text-3xl font-bold mb-3">Ciao! Mi chiamo</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-3">{t.hero.greeting}</h3>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
             Vinc<span className="text-primary">enzo</span> Caruso
           </h1>
-          <p className="text-base md:text-lg leading-relaxed mb-6 text-foreground/90">
-            Sono un professionista del <span className="text-primary font-medium">Customer Support</span> con un background tecnico in IT. 
-            Mi specializzo nel fornire <span className="text-primary font-medium">supporto multilingue</span> (Italiano, Inglese, Spagnolo) 
-            e nell'assistere clienti di <span className="text-primary font-medium">piattaforme SaaS e digitali</span>. 
-            La mia esperienza tecnica mi permette di <span className="text-primary font-medium">comprendere rapidamente</span> problemi complessi 
-            e comunicare soluzioni in modo <span className="text-primary font-medium">chiaro ed efficace</span>.
-          </p>
+          <p 
+            className="text-base md:text-lg leading-relaxed mb-6 text-foreground/90"
+            dangerouslySetInnerHTML={{ __html: t.hero.description }}
+          />
 
           {/* Social Links */}
           <div className="flex justify-center lg:justify-start gap-4 mb-6">
@@ -50,10 +50,10 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a href="/vincenzoCaruso_cv.pdf" download className="btn-primary">
-              Scarica CV
+              {t.hero.downloadCv}
             </a>
             <a href="#contact" className="btn-outline flex items-center gap-2">
-              Contattami
+              {t.hero.contactMe}
               <ArrowUpRight size={18} />
             </a>
           </div>

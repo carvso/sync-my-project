@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { toast } from 'sonner';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const Contact = () => {
+  const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -21,13 +23,13 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        toast.success('Messaggio inviato con successo!');
+        toast.success(t.contact.successMessage);
         form.reset();
       } else {
-        toast.error('Errore nell\'invio del messaggio. Riprova.');
+        toast.error(t.contact.errorMessage);
       }
     } catch (error) {
-      toast.error('Errore nell\'invio del messaggio. Riprova.');
+      toast.error(t.contact.errorMessage);
     } finally {
       setIsSubmitting(false);
     }
@@ -36,12 +38,11 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-[7%]">
       <h2 className="section-heading">
-        Contatta<span className="text-primary">mi</span>
+        {t.contact.title}<span className="text-primary">{t.contact.titleHighlight}</span>
       </h2>
       
       <p className="text-center text-base md:text-lg mb-10 max-w-3xl mx-auto text-foreground/85">
-        Sono disponibile per discutere opportunità in Customer Support, Customer Service o Tech Support. 
-        Non esitare a contattarmi per qualsiasi domanda o per organizzare un colloquio.
+        {t.contact.description}
       </p>
 
       <form 
@@ -52,14 +53,14 @@ const Contact = () => {
           <input
             type="text"
             name="nomeCognome"
-            placeholder="Nome e Cognome"
+            placeholder={t.contact.namePlaceholder}
             required
             className="input-field"
           />
           <input
             type="email"
             name="email"
-            placeholder="Indirizzo Email"
+            placeholder={t.contact.emailPlaceholder}
             required
             className="input-field"
           />
@@ -68,13 +69,13 @@ const Contact = () => {
           <input
             type="tel"
             name="cellulare"
-            placeholder="Numero di Telefono (opzionale)"
+            placeholder={t.contact.phonePlaceholder}
             className="input-field"
           />
           <input
             type="text"
             name="oggettoEmail"
-            placeholder="Oggetto"
+            placeholder={t.contact.subjectPlaceholder}
             required
             className="input-field"
           />
@@ -82,7 +83,7 @@ const Contact = () => {
         <textarea
           name="messaggio"
           rows={8}
-          placeholder="Scrivi il tuo messaggio..."
+          placeholder={t.contact.messagePlaceholder}
           required
           className="input-field resize-none mb-6"
         />
@@ -92,7 +93,7 @@ const Contact = () => {
             disabled={isSubmitting}
             className="btn-primary cursor-pointer disabled:opacity-60"
           >
-            {isSubmitting ? 'Invio in corso...' : 'Invia Messaggio'}
+            {isSubmitting ? t.contact.submitting : t.contact.submitButton}
           </button>
         </div>
       </form>

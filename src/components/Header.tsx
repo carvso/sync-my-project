@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
+import { useLanguage } from '@/i18n/LanguageContext';
+import LanguageSelector from './LanguageSelector';
 
 const Header = () => {
+  const { t } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDark, setIsDark] = useState(false);
@@ -11,8 +14,7 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
       
-      // Update active section
-      const sections = ['home', 'about', 'skills', 'experience', 'contact'];
+      const sections = ['home', 'about', 'languages', 'skills', 'work-experience', 'experience', 'contact'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -35,12 +37,13 @@ const Header = () => {
   };
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#skills', label: 'Competenze' },
-    { href: '#work-experience', label: 'Esperienza' },
-    { href: '#experience', label: 'Approccio' },
-    { href: '#contact', label: 'Contatti' },
+    { href: '#home', label: t.nav.home, id: 'home' },
+    { href: '#about', label: t.nav.about, id: 'about' },
+    { href: '#languages', label: t.nav.languages, id: 'languages' },
+    { href: '#skills', label: t.nav.skills, id: 'skills' },
+    { href: '#work-experience', label: t.nav.experience, id: 'work-experience' },
+    { href: '#experience', label: t.nav.approach, id: 'experience' },
+    { href: '#contact', label: t.nav.contact, id: 'contact' },
   ];
 
   return (
@@ -62,7 +65,7 @@ const Header = () => {
             href={link.href}
             onClick={() => setIsMenuOpen(false)}
             className={`relative text-lg font-medium mx-4 my-2 md:my-0 transition-colors duration-300 ${
-              activeSection === link.href.slice(1)
+              activeSection === link.id
                 ? 'text-primary after:content-[""] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-0.5 after:bg-primary'
                 : 'text-foreground hover:text-primary'
             }`}
@@ -72,21 +75,25 @@ const Header = () => {
         ))}
       </nav>
 
-      <button
-        onClick={toggleDarkMode}
-        className="text-2xl text-foreground hover:text-primary transition-colors ml-4 cursor-pointer"
-        aria-label="Toggle dark mode"
-      >
-        {isDark ? <Sun /> : <Moon />}
-      </button>
+      <div className="flex items-center gap-2">
+        <LanguageSelector />
+        
+        <button
+          onClick={toggleDarkMode}
+          className="text-2xl text-foreground hover:text-primary transition-colors cursor-pointer p-1.5"
+          aria-label="Toggle dark mode"
+        >
+          {isDark ? <Sun size={22} /> : <Moon size={22} />}
+        </button>
 
-      <button
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="md:hidden text-3xl text-foreground hover:text-primary transition-colors ml-4 cursor-pointer"
-        aria-label="Toggle menu"
-      >
-        {isMenuOpen ? <X /> : <Menu />}
-      </button>
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden text-3xl text-foreground hover:text-primary transition-colors cursor-pointer"
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <X /> : <Menu />}
+        </button>
+      </div>
     </header>
   );
 };
