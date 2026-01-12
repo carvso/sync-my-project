@@ -38,7 +38,8 @@ const Header = () => {
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#skills', label: 'Competenze' },
-    { href: '#experience', label: 'Esperienza' },
+    { href: '#work-experience', label: 'Esperienza' },
+    { href: '#experience', label: 'Approccio' },
     { href: '#contact', label: 'Contatti' },
   ];
 
