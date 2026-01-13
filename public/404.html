@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
-    <meta charset="utf-8" />
-    <title>Redirecting...</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vincenzo Caruso - Customer Support Specialist con background tecnico IT. Supporto multilingue (Italiano, Inglese, Spagnolo) per piattaforme SaaS e digitali." />
+    <title>Vincenzo Caruso | Customer Support Specialist</title>
     <script>
-      // Single Page Apps for GitHub Pages
-      // This script redirects all 404s to the index.html with the path preserved
-      var pathSegmentsToKeep = 1; // Keep /sync-my-project/ in the path
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      // Redirect to index.html preserving the path
+      sessionStorage.redirect = location.href;
     </script>
+    <meta http-equiv="refresh" content="0;URL='/sync-my-project/'">
   </head>
   <body>
-    Redirecting...
+    <div id="root"></div>
   </body>
 </html>
