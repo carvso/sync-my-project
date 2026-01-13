@@ -59,23 +59,30 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Profile Image - Blob Shape */}
+        {/* Profile Image - Organic Blob Shape */}
         <div className="flex justify-center items-center order-1 lg:order-2 animate-fade-in-up animation-delay-200">
-          <div className="relative">
+          <div className="relative group">
             <img
               src={profileImage}
               alt="Vincenzo Caruso - Customer Support Specialist"
-              className="w-full max-w-[280px] lg:max-w-[360px] object-cover transition-all duration-300 hover:-translate-y-1"
+              className="w-full max-w-[280px] lg:max-w-[360px] object-cover transition-all duration-500 ease-out group-hover:scale-105 group-hover:rotate-2"
               style={{
-                clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)',
-                filter: 'drop-shadow(0 20px 40px hsl(var(--primary) / 0.3))'
+                borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%',
+                filter: 'drop-shadow(0 25px 50px hsl(var(--primary) / 0.35))'
               }}
             />
-            {/* Decorative border */}
+            {/* Animated decorative blob border */}
             <div 
-              className="absolute inset-0 border-2 border-primary/30 pointer-events-none"
+              className="absolute -inset-3 border-2 border-primary/40 pointer-events-none transition-all duration-500 group-hover:scale-110 group-hover:-rotate-3"
               style={{
-                clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)'
+                borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%'
+              }}
+            />
+            {/* Secondary glow effect */}
+            <div 
+              className="absolute -inset-6 bg-gradient-to-br from-primary/20 to-transparent pointer-events-none blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              style={{
+                borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%'
               }}
             />
           </div>
