@@ -49,7 +49,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a href="/vincenzoCaruso_cv.pdf" download className="btn-primary">
+            <a href={`${import.meta.env.BASE_URL}vincenzoCaruso_cv.pdf`} download className="btn-primary">
               {t.hero.downloadCv}
             </a>
             <a href="#contact" className="btn-outline flex items-center gap-2">
@@ -59,13 +59,26 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Profile Image */}
+        {/* Profile Image - Blob Shape */}
         <div className="flex justify-center items-center order-1 lg:order-2 animate-fade-in-up animation-delay-200">
-          <img
-            src={profileImage}
-            alt="Vincenzo Caruso - Customer Support Specialist"
-            className="w-full max-w-[280px] lg:max-w-[360px] rounded-xl shadow-xl border border-border/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
-          />
+          <div className="relative">
+            <img
+              src={profileImage}
+              alt="Vincenzo Caruso - Customer Support Specialist"
+              className="w-full max-w-[280px] lg:max-w-[360px] object-cover transition-all duration-300 hover:-translate-y-1"
+              style={{
+                clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)',
+                filter: 'drop-shadow(0 20px 40px hsl(var(--primary) / 0.3))'
+              }}
+            />
+            {/* Decorative border */}
+            <div 
+              className="absolute inset-0 border-2 border-primary/30 pointer-events-none"
+              style={{
+                clipPath: 'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)'
+              }}
+            />
+          </div>
         </div>
       </div>
     </section>
