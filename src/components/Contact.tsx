@@ -30,7 +30,7 @@ const Contact = () => {
       <div className="max-w-4xl mx-auto">
         {/* Main Card - Schedule a Sync */}
         <a 
-          href="https://calendly.com/tuo-username" 
+          href="https://calendly.com/vcarusobusiness/30min" 
           target="_blank" 
           rel="noopener noreferrer"
           className="block group mb-6"
@@ -69,7 +69,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* WhatsApp Card */}
           <a 
-            href="https://wa.me/tuonumero" 
+            href="https://wa.me/34673166985" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group"
@@ -96,7 +96,7 @@ const Contact = () => {
 
           {/* LinkedIn Card */}
           <a 
-            href="https://linkedin.com/in/vincenzo-caruso" 
+            href="https://linkedin.com/in/vincenzo-carvso" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group"
