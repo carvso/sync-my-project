@@ -66,7 +66,7 @@ const Hero = () => {
           <div className="relative group">
             <img
               src={profileImage}
-              alt="Vincenzo Caruso - Customer Support Specialist"
+              alt="Vincenzo Caruso - Tech Recruitment Associate"
               className="w-full max-w-[280px] lg:max-w-[360px] object-cover transition-all duration-500 ease-out group-hover:scale-105 group-hover:rotate-2"
               style={{
                 borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%',

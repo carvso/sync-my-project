@@ -5,6 +5,9 @@ import Languages from '@/components/Languages';
 import Skills from '@/components/Skills';
 import WorkExperience from '@/components/WorkExperience';
 import Experience from '@/components/Experience';
+import TechRoles from '@/components/TechRoles';
+import RecruitmentProcess from '@/components/RecruitmentProcess';
+import FinalCta from '@/components/FinalCta';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
@@ -19,6 +22,9 @@ const Index = () => {
         <Skills />
         <WorkExperience />
         <Experience />
+        <TechRoles />
+        <RecruitmentProcess />
+        <FinalCta />
         <Contact />
       </main>
       <Footer />
