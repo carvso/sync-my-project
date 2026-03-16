@@ -14,12 +14,10 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
             Vinc<span className="text-primary">enzo</span> Caruso
           </h1>
-          <p className="text-sm md:text-base font-medium text-primary mb-3">
-            {t.hero.title}
-          </p>
-          <p className="text-base md:text-lg leading-relaxed mb-6 text-foreground/90">
-            {t.hero.description}
-          </p>
+          <p 
+            className="text-base md:text-lg leading-relaxed mb-6 text-foreground/90"
+            dangerouslySetInnerHTML={{ __html: t.hero.description }}
+          />
 
           {/* Social Links */}
           <div className="flex justify-center lg:justify-start gap-4 mb-6">
@@ -66,7 +64,7 @@ const Hero = () => {
           <div className="relative group">
             <img
               src={profileImage}
-              alt="Vincenzo Caruso - Tech Recruitment Associate"
+              alt="Vincenzo Caruso - Customer Support Specialist"
               className="w-full max-w-[280px] lg:max-w-[360px] object-cover transition-all duration-500 ease-out group-hover:scale-105 group-hover:rotate-2"
               style={{
                 borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%',

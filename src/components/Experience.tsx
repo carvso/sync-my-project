@@ -1,7 +1,7 @@
 import { CheckCircle, Heart, TrendingUp, Shield, BookOpen, Network } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 
-const icons = [Heart, Shield, TrendingUp, CheckCircle, BookOpen, Network];
+const icons = [CheckCircle, Heart, TrendingUp, Shield, BookOpen, Network];
 
 const Experience = () => {
   const { t } = useLanguage();

@@ -9,23 +9,32 @@ export const translations = {
       skills: 'Skills',
       experience: 'Experience',
       approach: 'Approach',
-      roles: 'Roles',
-      process: 'Process',
       contact: 'Contact',
     },
     hero: {
       greeting: "Hi! I'm",
-      title: 'Tech Recruitment Associate | IT Background | Multilingual Specialist',
-      description: `Bridging the gap between complex technical requirements and top-tier human talent. Native Italian speaker based in Madrid, leveraging a technical background to identify the best profiles in the European tech landscape.`,
+      description: `I'm a <span class="text-primary font-medium">Customer Support</span> professional with a technical IT background. 
+        I specialize in providing <span class="text-primary font-medium">multilingual support</span> (Italian, English, Spanish) 
+        and assisting clients on <span class="text-primary font-medium">SaaS and digital platforms</span>. 
+        My technical experience allows me to <span class="text-primary font-medium">quickly understand</span> complex issues 
+        and communicate solutions <span class="text-primary font-medium">clearly and effectively</span>.`,
       downloadCv: 'Download CV',
-      contactMe: "Looking for tech talent? Let's connect.",
+      contactMe: 'Contact Me',
     },
     about: {
       title: 'About',
       titleHighlight: 'Me',
-      subtitle: 'Tech Recruitment Associate with a technical and human approach.',
-      paragraph1: `I don't just find candidates; I understand their language. With a background in <span class="text-primary font-medium">Informatics</span> and experience in high-pressure international environments, I combine <span class="text-primary font-medium">technical literacy</span> with a <span class="text-primary font-medium">results-driven mindset</span>.`,
-      paragraph2: `My mission is to connect international companies with the <span class="text-primary font-medium">technical talent</span> they need to scale, ensuring a perfect match in both <span class="text-primary font-medium">skills and culture</span>.`,
+      subtitle: 'Customer support with a technical and human approach.',
+      paragraph1: `I have an <span class="text-primary font-medium">IT diploma</span> that gave me a solid technical foundation to understand 
+        digital platforms, SaaS software, and complex systems. This technical knowledge, combined 
+        with my <span class="text-primary font-medium">communication skills</span> and ability to work in <span class="text-primary font-medium">three languages</span> 
+        (Italian, English, Spanish), allows me to assist clients effectively, 
+        <span class="text-primary font-medium">quickly identifying</span> the root cause of problems and <span class="text-primary font-medium">communicating solutions</span> 
+        in a clear and accessible way.`,
+      paragraph2: `I believe that quality customer support comes from <span class="text-primary font-medium">technical understanding</span> 
+        combined with <span class="text-primary font-medium">empathy</span> and patience. My goal is to help every client 
+        solve their problem, even when working <span class="text-primary font-medium">under pressure</span> or 
+        with complex situations.`,
       cta: 'My Skills',
     },
     languages: {
@@ -42,27 +51,32 @@ export const translations = {
       title: 'My',
       titleHighlight: 'Skills',
       multilingual: {
-        title: 'Multilingual Sourcing',
+        title: 'Multilingual Support',
         items: [
-          'Finding and engaging talent across IT, EN, and ES markets.',
+          'Professional customer support in Italian, English, and Spanish',
+          'Experience with international and multicultural users',
         ],
       },
       technical: {
-        title: 'Technical Literacy',
+        title: 'Technical Skills',
         items: [
-          'Deep understanding of SDLC, CAD, and SaaS architectures to better vet candidates.',
+          'IT background and SaaS support familiarity',
+          'AutoCAD 2D and technical documentation',
+          'Basic web development knowledge (JavaScript / React)',
         ],
       },
       communication: {
-        title: 'Negotiation & Communication',
+        title: 'Communication',
         items: [
-          'Managing expectations and building long-term relationships with stakeholders.',
+          'Clear and effective communication with users',
+          'Active listening in high-pressure, KPI-driven environments',
         ],
       },
       problemSolving: {
-        title: 'KPI Driven',
+        title: 'Problem Solving',
         items: [
-          'Proven ability to work under pressure and hit placement targets.',
+          'Fast root-cause analysis',
+          'Effective technical troubleshooting',
         ],
       },
     },
@@ -113,75 +127,35 @@ export const translations = {
       titleHighlight: 'Approach',
       items: [
         {
-          title: 'Candidate Experience',
-          description: 'Ensuring a premium journey for every talent.',
+          title: 'Quick Understanding',
+          description: "I quickly analyze the customer's problem, identifying the cause and proposing concrete solutions.",
         },
         {
-          title: 'Technical Vetting',
-          description: 'Using my IT background to filter quality over quantity.',
+          title: 'Customer Focus',
+          description: 'Every interaction is an opportunity to build trust and ensure a positive experience.',
         },
         {
-          title: 'Market Intelligence',
-          description: 'Navigating the Italian and Spanish tech hubs with local expertise.',
+          title: 'Continuous Improvement',
+          description: 'I constantly learn from feedback and experiences to improve the service offered.',
+        },
+        {
+          title: 'Reliability',
+          description: 'I respect SLAs, keep promises, and follow every case until resolution.',
+        },
+        {
+          title: 'Documentation',
+          description: 'I maintain clear and updated documentation to facilitate future problem resolution.',
+        },
+        {
+          title: 'Collaboration',
+          description: 'I work in synergy with technical and commercial teams to ensure complete solutions.',
         },
       ],
-    },
-    techRoles: {
-      title: 'Tech Roles',
-      titleHighlight: 'I Recruit For',
-      roles: [
-        {
-          title: 'Software Engineers',
-          description: 'Frontend, Backend, and Full-Stack developers.',
-        },
-        {
-          title: 'CAD & Mechanical Engineers',
-          description: 'Technical profiles specialized in design and engineering software.',
-        },
-        {
-          title: 'DevOps & Cloud Engineers',
-          description: 'Infrastructure, automation, and cloud architecture specialists.',
-        },
-        {
-          title: 'Product & Tech Specialists',
-          description: 'Product managers, technical analysts, and SaaS specialists.',
-        },
-      ],
-    },
-    recruitmentProcess: {
-      title: 'My Recruitment',
-      titleHighlight: 'Process',
-      steps: [
-        {
-          step: '1',
-          title: 'Market Mapping',
-          description: 'Understanding the talent landscape and identifying top candidates.',
-        },
-        {
-          step: '2',
-          title: 'Multilingual Sourcing',
-          description: 'Targeting talent across international markets.',
-        },
-        {
-          step: '3',
-          title: 'Technical Screening',
-          description: 'Evaluating technical compatibility and communication skills.',
-        },
-        {
-          step: '4',
-          title: 'Placement & Follow-up',
-          description: 'Ensuring a strong match between company needs and candidate goals.',
-        },
-      ],
-    },
-    finalCta: {
-      title: 'Looking for tech talent in Europe?',
-      description: "Let's connect and build the right team together.",
     },
     contact: {
       title: 'Contact',
       titleHighlight: 'Me',
-      description: "I'm available to discuss opportunities in Tech Recruitment. Let's connect!",
+      description: "I'm available to discuss opportunities in Customer Support, Customer Service, or Tech Support. Let's connect!",
       statusAvailable: 'Available for new opportunities',
       scheduleTitle: 'Schedule a Sync',
       scheduleDescription: 'Pick a time that works best for you. No back-and-forth emails.',
@@ -203,23 +177,32 @@ export const translations = {
       skills: 'Competenze',
       experience: 'Esperienza',
       approach: 'Approccio',
-      roles: 'Ruoli',
-      process: 'Processo',
       contact: 'Contatti',
     },
     hero: {
       greeting: 'Ciao! Mi chiamo',
-      title: 'Tech Recruitment Associate | Background IT | Specialista Multilingue',
-      description: `Collego requisiti tecnici complessi con talenti di alto livello. Madrelingua italiano con base a Madrid, utilizzo il mio background tecnico per individuare i migliori profili nel panorama tecnologico europeo.`,
+      description: `Sono un professionista del <span class="text-primary font-medium">Customer Support</span> con un background tecnico in IT. 
+        Mi specializzo nel fornire <span class="text-primary font-medium">supporto multilingue</span> (Italiano, Inglese, Spagnolo) 
+        e nell'assistere clienti di <span class="text-primary font-medium">piattaforme SaaS e digitali</span>. 
+        La mia esperienza tecnica mi permette di <span class="text-primary font-medium">comprendere rapidamente</span> problemi complessi 
+        e comunicare soluzioni in modo <span class="text-primary font-medium">chiaro ed efficace</span>.`,
       downloadCv: 'Scarica CV',
-      contactMe: 'Cerchi talenti tech? Parliamone.',
+      contactMe: 'Contattami',
     },
     about: {
       title: 'Chi',
       titleHighlight: 'sono',
-      subtitle: 'Tech Recruitment Associate con un approccio tecnico e umano.',
-      paragraph1: `Non mi limito a trovare candidati: capisco il loro linguaggio. Con una formazione in <span class="text-primary font-medium">Informatica</span> e esperienza in contesti internazionali ad alta pressione, unisco <span class="text-primary font-medium">competenze tecniche</span> e <span class="text-primary font-medium">mentalità orientata ai risultati</span>.`,
-      paragraph2: `La mia missione è connettere aziende internazionali con il <span class="text-primary font-medium">talento tecnico</span> di cui hanno bisogno per crescere, garantendo un perfetto allineamento tra <span class="text-primary font-medium">competenze e cultura</span>.`,
+      subtitle: 'Supporto clienti con un approccio tecnico e umano.',
+      paragraph1: `Ho un <span class="text-primary font-medium">diploma in IT</span> che mi ha fornito una solida base tecnica per comprendere 
+        piattaforme digitali, software SaaS e sistemi complessi. Questa conoscenza tecnica, combinata 
+        con le mie <span class="text-primary font-medium">competenze comunicative</span> e la capacità di lavorare in <span class="text-primary font-medium">tre lingue</span> 
+        (Italiano, Inglese, Spagnolo), mi permette di assistere clienti in modo efficace, 
+        <span class="text-primary font-medium">identificando rapidamente</span> la causa dei problemi e <span class="text-primary font-medium">comunicando soluzioni</span> 
+        in modo chiaro e accessibile.`,
+      paragraph2: `Credo che il supporto clienti di qualità nasca dalla <span class="text-primary font-medium">comprensione tecnica</span> 
+        unita all'<span class="text-primary font-medium">empatia</span> e alla pazienza. Il mio obiettivo è aiutare ogni cliente 
+        a risolvere il proprio problema, anche quando lavoriamo <span class="text-primary font-medium">sotto pressione</span> o 
+        con situazioni complesse.`,
       cta: 'Le mie competenze',
     },
     languages: {
@@ -236,27 +219,32 @@ export const translations = {
       title: 'Le mie',
       titleHighlight: 'Competenze',
       multilingual: {
-        title: 'Multilingual Sourcing',
+        title: 'Supporto Multilingue',
         items: [
-          'Ricerca e coinvolgimento di talenti nei mercati IT, EN e ES.',
+          'Supporto clienti professionale in Italiano, Inglese e Spagnolo',
+          'Esperienza con utenti internazionali e multiculturali',
         ],
       },
       technical: {
-        title: 'Technical Literacy',
+        title: 'Competenze Tecniche',
         items: [
-          'Solida comprensione di SDLC, CAD e architetture SaaS per valutare meglio i candidati.',
+          'Background IT e familiarità con supporto SaaS',
+          'AutoCAD 2D e documentazione tecnica',
+          'Conoscenze base di sviluppo web (JavaScript / React)',
         ],
       },
       communication: {
-        title: 'Negotiation & Communication',
+        title: 'Comunicazione',
         items: [
-          'Gestione delle aspettative e costruzione di relazioni di lungo periodo con gli stakeholder.',
+          'Comunicazione chiara ed efficace con gli utenti',
+          'Ascolto attivo in ambienti ad alta pressione orientati ai KPI',
         ],
       },
       problemSolving: {
-        title: 'KPI Driven',
+        title: 'Problem Solving',
         items: [
-          'Capacità comprovata di lavorare sotto pressione e raggiungere obiettivi di placement.',
+          'Analisi rapida delle cause',
+          'Troubleshooting tecnico efficace',
         ],
       },
     },
@@ -307,75 +295,35 @@ export const translations = {
       titleHighlight: 'Approccio',
       items: [
         {
-          title: 'Candidate Experience',
-          description: "Garantire un'esperienza di alto livello per ogni candidato.",
+          title: 'Comprensione Rapida',
+          description: 'Analizzo rapidamente il problema del cliente, identificando la causa e proponendo soluzioni concrete.',
         },
         {
-          title: 'Technical Vetting',
-          description: 'Utilizzare il mio background IT per privilegiare qualità rispetto alla quantità.',
+          title: 'Attenzione al Cliente',
+          description: "Ogni interazione è un'opportunità per costruire fiducia e garantire un'esperienza positiva.",
         },
         {
-          title: 'Market Intelligence',
-          description: 'Orientarsi nei principali hub tecnologici italiani e spagnoli grazie alla conoscenza del mercato locale.',
+          title: 'Miglioramento Continuo',
+          description: 'Apprendo costantemente dai feedback e dalle esperienze per migliorare il servizio offerto.',
+        },
+        {
+          title: 'Affidabilità',
+          description: 'Rispetto gli SLA, mantengo le promesse e seguo ogni caso fino alla sua risoluzione.',
+        },
+        {
+          title: 'Documentazione',
+          description: 'Mantengo documentazione chiara e aggiornata per facilitare la risoluzione di problemi futuri.',
+        },
+        {
+          title: 'Collaborazione',
+          description: 'Lavoro in sinergia con team tecnici e commerciali per garantire soluzioni complete.',
         },
       ],
-    },
-    techRoles: {
-      title: 'Ruoli Tech',
-      titleHighlight: 'che Ricerco',
-      roles: [
-        {
-          title: 'Software Engineers',
-          description: 'Sviluppatori frontend, backend e full-stack.',
-        },
-        {
-          title: 'CAD & Mechanical Engineers',
-          description: 'Profili tecnici specializzati in progettazione e software di ingegneria.',
-        },
-        {
-          title: 'DevOps & Cloud Engineers',
-          description: 'Specialisti in infrastruttura, automazione e architetture cloud.',
-        },
-        {
-          title: 'Product & Tech Specialists',
-          description: 'Product manager, analisti tecnici e specialisti SaaS.',
-        },
-      ],
-    },
-    recruitmentProcess: {
-      title: 'Il mio Processo',
-      titleHighlight: 'di Recruiting',
-      steps: [
-        {
-          step: '1',
-          title: 'Analisi del mercato',
-          description: 'Comprendere il panorama dei talenti e identificare i migliori profili.',
-        },
-        {
-          step: '2',
-          title: 'Multilingual sourcing',
-          description: 'Ricerca mirata di talenti nei mercati internazionali.',
-        },
-        {
-          step: '3',
-          title: 'Screening tecnico',
-          description: 'Valutazione delle competenze tecniche e delle capacità comunicative.',
-        },
-        {
-          step: '4',
-          title: 'Inserimento e follow-up',
-          description: 'Garantire il miglior allineamento tra azienda e candidato.',
-        },
-      ],
-    },
-    finalCta: {
-      title: 'Cerchi talenti tech in Europa?',
-      description: 'Costruiamo insieme il team giusto.',
     },
     contact: {
       title: 'Contatta',
       titleHighlight: 'mi',
-      description: 'Sono disponibile per discutere opportunità nel Tech Recruitment. Connettiamoci!',
+      description: 'Sono disponibile per discutere opportunità in Customer Support, Customer Service o Tech Support. Connettiamoci!',
       statusAvailable: 'Disponibile per nuove opportunità',
       scheduleTitle: 'Pianifica una Call',
       scheduleDescription: 'Scegli l\'orario più comodo per te. Niente email avanti e indietro.',
@@ -397,23 +345,32 @@ export const translations = {
       skills: 'Habilidades',
       experience: 'Experiencia',
       approach: 'Enfoque',
-      roles: 'Roles',
-      process: 'Proceso',
       contact: 'Contacto',
     },
     hero: {
       greeting: '¡Hola! Soy',
-      title: 'Tech Recruitment Associate | Background en IT | Especialista Multilingüe',
-      description: `Conecto requisitos técnicos complejos con talento de alto nivel. Italiano nativo basado en Madrid, utilizo mi formación técnica para identificar los mejores perfiles dentro del ecosistema tecnológico europeo.`,
+      description: `Soy un profesional de <span class="text-primary font-medium">Customer Support</span> con formación técnica en IT. 
+        Me especializo en proporcionar <span class="text-primary font-medium">soporte multilingüe</span> (Italiano, Inglés, Español) 
+        y asistir a clientes en <span class="text-primary font-medium">plataformas SaaS y digitales</span>. 
+        Mi experiencia técnica me permite <span class="text-primary font-medium">comprender rápidamente</span> problemas complejos 
+        y comunicar soluciones de manera <span class="text-primary font-medium">clara y efectiva</span>.`,
       downloadCv: 'Descargar CV',
-      contactMe: '¿Buscas talento tech? Conectemos.',
+      contactMe: 'Contáctame',
     },
     about: {
       title: 'Sobre',
       titleHighlight: 'mí',
-      subtitle: 'Tech Recruitment Associate con un enfoque técnico y humano.',
-      paragraph1: `No solo encuentro candidatos; entiendo su lenguaje. Con formación en <span class="text-primary font-medium">Informática</span> y experiencia en entornos internacionales de alta presión, combino <span class="text-primary font-medium">conocimiento técnico</span> con una <span class="text-primary font-medium">mentalidad orientada a resultados</span>.`,
-      paragraph2: `Mi misión es conectar empresas internacionales con el <span class="text-primary font-medium">talento tecnológico</span> que necesitan para escalar, asegurando un encaje perfecto tanto en <span class="text-primary font-medium">habilidades como en cultura</span>.`,
+      subtitle: 'Soporte al cliente con un enfoque técnico y humano.',
+      paragraph1: `Tengo un <span class="text-primary font-medium">diploma en IT</span> que me proporcionó una sólida base técnica para comprender 
+        plataformas digitales, software SaaS y sistemas complejos. Este conocimiento técnico, combinado 
+        con mis <span class="text-primary font-medium">habilidades comunicativas</span> y la capacidad de trabajar en <span class="text-primary font-medium">tres idiomas</span> 
+        (Italiano, Inglés, Español), me permite asistir a clientes de manera efectiva, 
+        <span class="text-primary font-medium">identificando rápidamente</span> la causa de los problemas y <span class="text-primary font-medium">comunicando soluciones</span> 
+        de forma clara y accesible.`,
+      paragraph2: `Creo que el soporte al cliente de calidad nace de la <span class="text-primary font-medium">comprensión técnica</span> 
+        unida a la <span class="text-primary font-medium">empatía</span> y la paciencia. Mi objetivo es ayudar a cada cliente 
+        a resolver su problema, incluso cuando trabajamos <span class="text-primary font-medium">bajo presión</span> o 
+        con situaciones complejas.`,
       cta: 'Mis habilidades',
     },
     languages: {
@@ -430,27 +387,32 @@ export const translations = {
       title: 'Mis',
       titleHighlight: 'Habilidades',
       multilingual: {
-        title: 'Multilingual Sourcing',
+        title: 'Soporte Multilingüe',
         items: [
-          'Búsqueda y captación de talento en los mercados IT, EN y ES.',
+          'Soporte al cliente profesional en Italiano, Inglés y Español',
+          'Experiencia con usuarios internacionales y multiculturales',
         ],
       },
       technical: {
-        title: 'Technical Literacy',
+        title: 'Habilidades Técnicas',
         items: [
-          'Comprensión profunda de SDLC, CAD y arquitecturas SaaS para evaluar mejor a los candidatos.',
+          'Formación IT y familiaridad con soporte SaaS',
+          'AutoCAD 2D y documentación técnica',
+          'Conocimientos básicos de desarrollo web (JavaScript / React)',
         ],
       },
       communication: {
-        title: 'Negotiation & Communication',
+        title: 'Comunicación',
         items: [
-          'Gestión de expectativas y construcción de relaciones a largo plazo con stakeholders.',
+          'Comunicación clara y efectiva con usuarios',
+          'Escucha activa en entornos de alta presión orientados a KPIs',
         ],
       },
       problemSolving: {
-        title: 'KPI Driven',
+        title: 'Resolución de Problemas',
         items: [
-          'Capacidad demostrada para trabajar bajo presión y alcanzar objetivos de colocación.',
+          'Análisis rápido de causas',
+          'Troubleshooting técnico efectivo',
         ],
       },
     },
@@ -501,75 +463,35 @@ export const translations = {
       titleHighlight: 'Enfoque',
       items: [
         {
-          title: 'Candidate Experience',
-          description: 'Garantizar una experiencia premium para cada candidato.',
+          title: 'Comprensión Rápida',
+          description: 'Analizo rápidamente el problema del cliente, identificando la causa y proponiendo soluciones concretas.',
         },
         {
-          title: 'Technical Vetting',
-          description: 'Utilizar mi background en IT para priorizar calidad sobre cantidad.',
+          title: 'Atención al Cliente',
+          description: 'Cada interacción es una oportunidad para construir confianza y garantizar una experiencia positiva.',
         },
         {
-          title: 'Market Intelligence',
-          description: 'Navegar los hubs tecnológicos de Italia y España con conocimiento del mercado local.',
+          title: 'Mejora Continua',
+          description: 'Aprendo constantemente de los comentarios y experiencias para mejorar el servicio ofrecido.',
+        },
+        {
+          title: 'Fiabilidad',
+          description: 'Respeto los SLAs, mantengo las promesas y sigo cada caso hasta su resolución.',
+        },
+        {
+          title: 'Documentación',
+          description: 'Mantengo documentación clara y actualizada para facilitar la resolución de problemas futuros.',
+        },
+        {
+          title: 'Colaboración',
+          description: 'Trabajo en sinergia con equipos técnicos y comerciales para garantizar soluciones completas.',
         },
       ],
-    },
-    techRoles: {
-      title: 'Roles Tech',
-      titleHighlight: 'que Recluto',
-      roles: [
-        {
-          title: 'Software Engineers',
-          description: 'Desarrolladores frontend, backend y full-stack.',
-        },
-        {
-          title: 'CAD & Mechanical Engineers',
-          description: 'Perfiles técnicos especializados en diseño e ingeniería.',
-        },
-        {
-          title: 'DevOps & Cloud Engineers',
-          description: 'Especialistas en infraestructura, automatización y arquitectura cloud.',
-        },
-        {
-          title: 'Product & Tech Specialists',
-          description: 'Product managers, analistas técnicos y especialistas SaaS.',
-        },
-      ],
-    },
-    recruitmentProcess: {
-      title: 'Mi Proceso',
-      titleHighlight: 'de Recruiting',
-      steps: [
-        {
-          step: '1',
-          title: 'Análisis del mercado',
-          description: 'Comprender el panorama del talento e identificar los mejores perfiles.',
-        },
-        {
-          step: '2',
-          title: 'Multilingual sourcing',
-          description: 'Búsqueda de talento en mercados internacionales.',
-        },
-        {
-          step: '3',
-          title: 'Evaluación técnica',
-          description: 'Validación de compatibilidad técnica y habilidades comunicativas.',
-        },
-        {
-          step: '4',
-          title: 'Colocación y seguimiento',
-          description: 'Asegurar el mejor encaje entre empresa y candidato.',
-        },
-      ],
-    },
-    finalCta: {
-      title: '¿Buscas talento tech en Europa?',
-      description: 'Construyamos juntos el equipo adecuado.',
     },
     contact: {
       title: 'Contácta',
       titleHighlight: 'me',
-      description: 'Estoy disponible para discutir oportunidades en Tech Recruitment. ¡Conectemos!',
+      description: 'Estoy disponible para discutir oportunidades en Customer Support, Customer Service o Tech Support. ¡Conectemos!',
       statusAvailable: 'Disponible para nuevas oportunidades',
       scheduleTitle: 'Programa una Llamada',
       scheduleDescription: 'Elige el horario que mejor te convenga. Sin emails de ida y vuelta.',

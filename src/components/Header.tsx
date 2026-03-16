@@ -14,7 +14,7 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
       
-      const sections = ['home', 'about', 'languages', 'skills', 'work-experience', 'experience', 'roles', 'process', 'contact'];
+      const sections = ['home', 'about', 'languages', 'skills', 'work-experience', 'experience', 'contact'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
